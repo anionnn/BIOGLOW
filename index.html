@@ -5,31 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bioglow - Página en construcción</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            background-color: #f2f2f2;
-        }
-        .content {
-            text-align: center;
+            background-color: #000;
+            overflow: hidden;
+            position: relative;
         }
         img {
-            width: 200px;
-            margin-bottom: 20px;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover; /* Asegura que el logo ocupe toda la pantalla sin deformarse */
         }
         h1 {
-            font-size: 2rem;
-            color: #333;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: white;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Contorno negro */
+            background: rgba(0, 0, 0, 0.5); /* Opcional: fondo semitransparente */
+            padding: 10px 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <img src="logo_bioglow.png" alt="Bioglow Logo">
-        <h1>Página en construcción</h1>
-    </div>
+    <img src="logo_bioglow.png" alt="Bioglow Logo">
+    <h1>Página en construcción</h1>
 </body>
 </html>
